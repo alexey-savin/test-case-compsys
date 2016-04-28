@@ -1,4 +1,5 @@
 ﻿using CompSys.TestCase.WCFService;
+using CompSys.TestCase.WCFService.SP;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace CompSys.TestCase.ConsoleHost
             ServiceHost serviceHost = null;
             try
             {
-                serviceHost = new ServiceHost(typeof(CompSysService));
+                serviceHost = new ServiceHost(typeof(CompSysService_SP));
                 serviceHost.Open();
 
                 Console.WriteLine("Service online!");

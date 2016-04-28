@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="ICompSysService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CompSysService.cs" />
+    <Compile Include="SP\CompSysService_SP.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

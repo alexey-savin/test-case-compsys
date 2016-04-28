@@ -8,9 +8,9 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
-namespace CompSys.TestCase.WCFService
+namespace CompSys.TestCase.WCFService.SP
 {
-    public class CompSysService : ICompSysService
+    public class CompSysService_SP : ICompSysService
     {
         public void AddOrUpdate(int id, int value)
         {
