@@ -1,7 +1,7 @@
-﻿using CompSys.TestCase.WCFService.SP;
-using CompSys.TestCase.WCFService.EF;
+﻿using CompSys.TestCase.WCFService;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.ServiceModel;
 using System.ServiceModel.Description;
@@ -12,14 +12,19 @@ namespace CompSys.TestCase.ConsoleHost
 {
     class Program
     {
+        private const string ServiceHostSectionName = "serviceHost";
+
         static void Main(string[] args)
         {
             ServiceHost serviceHost = null;
             try
             {
-                serviceHost = new ServiceHost(typeof(CompSysService_EF));
+                ServiceHostSection serviceHostSection = (ServiceHostSection)ConfigurationManager.GetSection(ServiceHostSectionName);
+
+                serviceHost = new ServiceHost(serviceHostSection.Implementation.GetImplementationType());
                 serviceHost.Open();
 
+                Console.WriteLine(serviceHostSection.Implementation.GetImplementationType().Name);
                 Console.WriteLine("Service online!");
                 Console.ReadKey();
 

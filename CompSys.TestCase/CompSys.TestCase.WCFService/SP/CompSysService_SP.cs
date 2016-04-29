@@ -8,7 +8,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
-namespace CompSys.TestCase.WCFService.SP
+namespace CompSys.TestCase.WCFService
 {
     public class CompSysService_SP : ICompSysService
     {

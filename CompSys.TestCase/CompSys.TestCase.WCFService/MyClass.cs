@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CompSys.TestCase.Client
+namespace CompSys.TestCase.WCFService
 {
-    abstract class OperationParameters
+    public class MyClass
     {
-        public abstract bool IsValid();
     }
 }

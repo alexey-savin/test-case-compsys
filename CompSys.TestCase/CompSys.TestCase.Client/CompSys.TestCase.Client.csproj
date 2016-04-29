@@ -45,9 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OperationParameters.cs" />
-    <Compile Include="OperationParametersBuffer.cs" />
-    <Compile Include="OperationType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\SvcRef\Reference.cs">
